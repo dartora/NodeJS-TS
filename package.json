@@ -1,0 +1,20 @@
+{
+  "name": "backend-typescript_crud_api",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "dartora <rodolfo-dartora>",
+  "license": "MIT",
+  "dependencies": {
+    "concurrently": "^7.4.0",
+    "nodemon": "^2.0.20",
+    "typescript": "^4.8.4"
+  },
+  "scripts": {
+    "dev": "concurrently npm:start:*",
+    "start:build": "tsc -w",
+    "start:server": "nodemon ./build/index.js",
+    "start": "node ./build/index.js",
+    "build": "tsc",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
